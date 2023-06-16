@@ -1,11 +1,12 @@
 import { Options } from 'sequelize';
+import 'dotenv/config'
 
 const config: Options = {
-  username: process.env.MYSQLUSER || 'root',
-  password: process.env.MYSQLPASSWORD || 'e22433fwk',
+  username: process.env.MYSQLUSER,
+  password: process.env.MYSQLPASSWORD,
   database: process.env.MYSQLDATABASE,
-  host: process.env.MYSQLHOST || '0.0.0.0',
-  port: Number(process.env.MYSQLPORT) || 3306,
+  host: process.env.MYSQLHOST,
+  port: Number(process.env.MYSQLPORT),
   dialect: 'mysql',
   dialectOptions: {
     timezone: 'Z',
