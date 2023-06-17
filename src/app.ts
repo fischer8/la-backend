@@ -23,7 +23,7 @@ export default class App {
   }
 
   public start(PORT: number): void {
-    this.app.listen(PORT, '0.0.0.0', () => console.log(`Running on port ${PORT} ${process.env.MYSQLHOST}`));
+    this.app.listen(PORT, () => console.log(`Running on port ${PORT} ${process.env.MYSQLHOST}`));
   }
 }
 
