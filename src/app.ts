@@ -4,6 +4,7 @@ import cors from 'cors';
 import router from './routers';
 import errorHandler from './middlewares/ErrorHandler';
 import bodyParser from 'body-parser';
+import 'dotenv/config'
 
 export default class App {
   public app: express.Express;
@@ -22,7 +23,7 @@ export default class App {
   }
 
   public start(PORT: number): void {
-    this.app.listen(PORT, '0.0.0.0', () => console.log(`Running on port ${PORT}`));
+    this.app.listen(PORT, '0.0.0.0', () => console.log(`Running on port ${PORT} ${process.env.MYSQLHOST}`));
   }
 }
 
