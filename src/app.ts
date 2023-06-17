@@ -21,8 +21,8 @@ export default class App {
     this.app.use(errorHandler);
   }
 
-  public start(PORT: string | number): void {
-    this.app.listen(PORT, () => console.log(`Running on port ${PORT}`));
+  public start(PORT: number): void {
+    this.app.listen(PORT, '0.0.0.0', () => console.log(`Running on port ${PORT}`));
   }
 }
 

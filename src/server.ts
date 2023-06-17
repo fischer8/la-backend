@@ -3,4 +3,4 @@ import 'express-async-errors';
 import 'dotenv/config'
 
 const PORT = process.env.MYSQLPORT;
-new App().start(PORT);
+new App().start(Number(PORT));
