@@ -9,7 +9,7 @@
     "test:coverage:json": "nyc --reporter=json-summary npm run test",
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "build": "npm i && tsc --project tsconfig.json && cp -r ./src/database/migrations/ ./src/database/seeders/ ./dist/database/",
-    "start": "node ./dist/server.js && npm run db:reset",
+    "start": "npm run db:reset && node ./dist/server.js",
     "predev": "npm run db:reset",
     "dev": "tsnd --watch \"./src/**\" --transpile-only ./src/server.ts",
     "lint": "eslint ./src --ext .ts"
