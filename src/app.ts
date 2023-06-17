@@ -22,7 +22,7 @@ export default class App {
   }
 
   public start(PORT: number): void {
-    this.app.listen(PORT, 'http://localhost', () => console.log(`Running on port ${PORT}`));
+    this.app.listen(PORT, 'localhost', () => console.log(`Running on port ${PORT}`));
   }
 }
 
