@@ -2,8 +2,8 @@ Projeto de backend de uma aplicação com endpoints de criação de conta e logi
 #
 # Frameworks:
 
-### JWT
-### Joi
-### Typescript
-### Sequelize
-### Express
+- JWT
+- Joi
+- Typescript
+- Sequelize
+- Express
