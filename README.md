@@ -1,7 +1,6 @@
 Projeto de backend de uma aplicação com endpoints de criação de conta e login com comunicação com o banco de dados, utilizando autenticação.
 #
-# Frameworks:
-
+Frameworks:
 - JWT
 - Joi
 - Typescript
