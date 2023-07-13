@@ -6,3 +6,4 @@ Frameworks:
 - Typescript
 - Sequelize
 - Express
+- Postgres
