@@ -12,7 +12,7 @@ const config: Options = {
     timezone: 'Z',
     connectionString: process.env.POSTGRES_URL,
   },
-  logging: false,
+  logging: true,
 }
 
 module.exports = config;
