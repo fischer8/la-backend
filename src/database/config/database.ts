@@ -8,9 +8,9 @@ const config: Options = {
   host: process.env.POSTGRES_HOST,
   port: Number(process.env.POSTGRES_PORT),
   dialect: 'postgres',
+  connectionString: process.env.POSTGRES_URL + "?sslmode=require",
   dialectOptions: {
     timezone: 'Z',
-    connectionString: process.env.POSTGRES_URL + "?sslmode=require",
   },
   logging: false,
 }
