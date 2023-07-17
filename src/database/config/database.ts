@@ -10,6 +10,7 @@ const config: Options = {
   dialect: 'postgres',
   dialectOptions: {
     timezone: 'Z',
+    connectionString: process.env.DB_URL + "?sslmode=require",
   },
   logging: false,
 }
