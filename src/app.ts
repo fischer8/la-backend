@@ -27,5 +27,3 @@ export default class App {
   }
 }
 
-const PORT = process.env.APP_PORT || 5050;
-new App().start(Number(PORT));
