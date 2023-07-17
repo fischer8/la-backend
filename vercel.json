@@ -2,10 +2,10 @@
   "version": 2,
   "use": "@vercel/node",
   "routes": [
-      {
-          "src": "dist/(.*)",
-          "dest": "/"
-      }
+    {
+        "src": "dist/(.*)",
+        "dest": "/"
+    }
   ],
   "installCommand": "npm install",
   "buildCommand": "npm run build",
