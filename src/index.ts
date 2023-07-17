@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import App from './app';
 import 'express-async-errors';
 import 'dotenv/config'
