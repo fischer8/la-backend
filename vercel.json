@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "routes": [
+      {
+          "src": "/(.*)",
+          "dest": "/"
+      }
+  ],
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist"  
+}

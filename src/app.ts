@@ -28,6 +28,3 @@ export default class App {
     this.app.listen(PORT, () => console.log(`Running on port ${PORT}`));
   }
 }
-const PORT = process.env.APP_PORT || 5050;
-new App().start(Number(PORT));
-
