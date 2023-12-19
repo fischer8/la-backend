@@ -1,11 +1,9 @@
--- Criar o banco de dados
+
 DROP DATABASE if exists Hospedagem;
 CREATE DATABASE Hospedagem;
 
--- Usar o banco de dados
 USE Hospedagem;
 
--- Tabela 'users'
 CREATE TABLE users (
   id INT AUTO_INCREMENT PRIMARY KEY,
   `name` VARCHAR(255) NOT NULL,
@@ -14,21 +12,18 @@ CREATE TABLE users (
   phone BIGINT
 );
 
--- Tabela 'suites'
 CREATE TABLE suites (
   id INT AUTO_INCREMENT PRIMARY KEY,
   `name` INT NOT NULL,
   `value` DECIMAL(10, 2) NOT NULL
 );
 
--- Tabela 'payments'
 CREATE TABLE payments (
   id INT AUTO_INCREMENT PRIMARY KEY,
   method VARCHAR(255) NOT NULL,
   `value` DECIMAL(10, 2) NOT NULL
 );
 
--- Tabela 'periods'
 CREATE TABLE periods (
   id INT AUTO_INCREMENT PRIMARY KEY,
   init DATE NOT NULL,
@@ -37,7 +32,6 @@ CREATE TABLE periods (
   FOREIGN KEY (suiteId) REFERENCES suites (id) ON UPDATE CASCADE ON DELETE CASCADE
 );
 
--- Tabela 'host'
 CREATE TABLE host (
   id INT AUTO_INCREMENT PRIMARY KEY,
   periodId INT NOT NULL,
